@@ -1,0 +1,10 @@
+.nav-hover {
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-hover:hover {
+  background-color: #f8f9fa;
+  color: #000 !important;
+}
