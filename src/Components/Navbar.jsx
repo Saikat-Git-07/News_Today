@@ -3,9 +3,9 @@ import "./navbar.css"
 const Navbar = ({setCategory}) => {
 
   return (
-  <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+ <nav className="navbar navbar-expand-lg custom-navbar shadow-sm sticky-top" data-bs-theme="dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#"><span className='badge bg-light text-dark fs-5'>News_Mag</span></a>
+    <a className="navbar-brand" href="#"><span className='badge bg-light text-dark fs-5'>News_Today</span></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -25,7 +25,7 @@ const Navbar = ({setCategory}) => {
           <div className="nav-link nav-hover" onClick={()=>setCategory("science")}>Science</div>
         </li>
           <li className="nav-item">
-          <div className="nav-link nav-hover" onClick={()=>setCategory("sports")}>Sport</div>
+          <div className="nav-link nav-hover" onClick={()=>setCategory("sports")}>Sports</div>
         </li>
           <li className="nav-item">
           <div className="nav-link nav-hover" onClick={()=>setCategory("entertainment")}>Entertainment</div>
