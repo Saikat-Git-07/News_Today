@@ -7,8 +7,11 @@ const NewsBoard = ({ category }) => {
 
     useEffect(() => {
         const apiKey = import.meta.env.VITE_API_KEY;
+        // Set default query if no category is selected
+        const defaultQuery = "latest news";
+        const query = category ? category : defaultQuery;
 
-        const url = `https://newsapi.org/v2/everything?q=${category}&sortBy=publishedAt&language=en&apiKey=${apiKey}`;
+        const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&sortBy=publishedAt&language=en&apiKey=${apiKey}`;
 
         fetch(url).then(Response => Response.json()).then(data => setArticles(data.articles));
     }, [category])
