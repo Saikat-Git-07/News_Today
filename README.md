@@ -3,7 +3,7 @@
 **News_Today** is a responsive, category-based news web application built using **React** and **Bootstrap 5**, powered by the [NewsAPI](https://newsapi.org/). It fetches and displays real-time headlines from various categories like Technology, Business, Health, Sports, and more.
 
 ---
-
+![image alt](https://github.com/Saikat-Git-07/News_Today/blob/4070d1d5c853b86b837881ab350d4fbb62487eaa/News_Today.png)
 ## 📌 Features
 
 - 🔄 Dynamic news fetching by category
